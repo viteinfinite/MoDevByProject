@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42522DF81B53E69000739719 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42522DF71B53E69000739719 /* File.swift */; };
 		42DBCE431B5045B600091592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBCE421B5045B600091592 /* main.m */; };
 		42DBCE461B5045B600091592 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBCE451B5045B600091592 /* AppDelegate.m */; };
 		42DBCE491B5045B600091592 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBCE481B5045B600091592 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42522DF61B53E68F00739719 /* MoDevByProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoDevByProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		42522DF71B53E69000739719 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		42DBCE3E1B5045B600091592 /* MoDevByProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoDevByProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DBCE421B5045B600091592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42DBCE441B5045B600091592 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				42DBCE4F1B5045B600091592 /* LaunchScreen.storyboard */,
 				42DBCE521B5045B600091592 /* Info.plist */,
 				42DBCE411B5045B600091592 /* Supporting Files */,
+				42522DF71B53E69000739719 /* File.swift */,
+				42522DF61B53E68F00739719 /* MoDevByProject-Bridging-Header.h */,
 			);
 			path = MoDevByProject;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		42DBCE361B5045B600091592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Xebia IT Architects";
 				TargetAttributes = {
@@ -212,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DBCE491B5045B600091592 /* ViewController.m in Sources */,
+				42522DF81B53E69000739719 /* File.swift in Sources */,
 				42DBCE461B5045B600091592 /* AppDelegate.m in Sources */,
 				42DBCE431B5045B600091592 /* main.m in Sources */,
 			);
@@ -339,10 +346,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MoDevByProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.MoDevByProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoDevByProject/MoDevByProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,10 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MoDevByProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.MoDevByProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MoDevByProject/MoDevByProject-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -400,6 +412,7 @@
 				42DBCE621B5045B600091592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42DBCE631B5045B600091592 /* Build configuration list for PBXNativeTarget "MoDevByProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +421,7 @@
 				42DBCE651B5045B600091592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
