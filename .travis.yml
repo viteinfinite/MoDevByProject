@@ -1,5 +1,5 @@
 osx_image: xcode6.4
 language: objective-c
 script: 
-- xcodebuild -workspace MoDevByProject.xcworkspace -scheme MoDevByProject clean build | xcpretty
+- CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO xcodebuild -workspace MoDevByProject.xcworkspace -scheme MoDevByProject clean build | xcpretty
 - xcodebuild -workspace MoDevByProject.xcworkspace -scheme MoDevByProject -destination "name=iPad 2,OS=latest" clean test | xcpretty
