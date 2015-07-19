@@ -1,0 +1,4 @@
+language: objective-c
+script: 
+- xcodebuild -workspace MoDevByProject.xcworkspace -scheme MoDevByProject clean build | xcpretty
+- xcodebuild -workspace MoDevByProject.xcworkspace -scheme MoDevByProject -destination "name=iPad 2,OS=latest" clean test | xcpretty
