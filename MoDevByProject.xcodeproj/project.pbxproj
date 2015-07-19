@@ -13,7 +13,6 @@
 		42DBCE491B5045B600091592 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBCE481B5045B600091592 /* ViewController.m */; };
 		42DBCE4C1B5045B600091592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DBCE4A1B5045B600091592 /* Main.storyboard */; };
 		42DBCE4E1B5045B600091592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DBCE4D1B5045B600091592 /* Assets.xcassets */; };
-		42DBCE511B5045B600091592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DBCE4F1B5045B600091592 /* LaunchScreen.storyboard */; };
 		42DBCE5C1B5045B600091592 /* MoDevByProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DBCE5B1B5045B600091592 /* MoDevByProjectTests.m */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		42DBCE481B5045B600091592 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		42DBCE4B1B5045B600091592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42DBCE4D1B5045B600091592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		42DBCE501B5045B600091592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DBCE521B5045B600091592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DBCE571B5045B600091592 /* MoDevByProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoDevByProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DBCE5B1B5045B600091592 /* MoDevByProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoDevByProjectTests.m; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				42DBCE481B5045B600091592 /* ViewController.m */,
 				42DBCE4A1B5045B600091592 /* Main.storyboard */,
 				42DBCE4D1B5045B600091592 /* Assets.xcassets */,
-				42DBCE4F1B5045B600091592 /* LaunchScreen.storyboard */,
 				42DBCE521B5045B600091592 /* Info.plist */,
 				42DBCE411B5045B600091592 /* Supporting Files */,
 				42522DF71B53E69000739719 /* File.swift */,
@@ -197,7 +194,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DBCE511B5045B600091592 /* LaunchScreen.storyboard in Resources */,
 				42DBCE4E1B5045B600091592 /* Assets.xcassets in Resources */,
 				42DBCE4C1B5045B600091592 /* Main.storyboard in Resources */,
 			);
@@ -249,14 +245,6 @@
 				42DBCE4B1B5045B600091592 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		42DBCE4F1B5045B600091592 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42DBCE501B5045B600091592 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -348,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MoDevByProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.MoDevByProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MoDevByProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.MoDevByProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
