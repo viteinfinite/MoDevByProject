@@ -25,6 +25,11 @@
 }
 
 - (void)testExample {
+    id expectation = [self expectationWithDescription:@"qds"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(28 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [expectation fulfill];
+    });
+    [self waitForExpectationsWithTimeout:30.0 handler:nil];
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
